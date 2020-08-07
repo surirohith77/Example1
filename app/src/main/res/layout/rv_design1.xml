@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:id="@+id/relative1">
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/down_arrow_blue"
+        android:id="@+id/ivViewMore"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TItle"
+        android:id="@+id/tvTitle"
+        android:layout_toEndOf="@+id/ivViewMore"
+       android:layout_marginTop="13dp"
+        android:textSize="18sp"
+        android:textColor="#FFE503"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv2"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layoutAnimation="@anim/layout_animation_down_to_up"
+        />
+
+</LinearLayout>
